@@ -35,7 +35,9 @@ trigger.onclick = function(){
 }
 
 function log(msg) {
-  document.body.innerHTML += msg
+  var span = document.createElement('span')
+  span.innerText = msg
+  document.body.appendChild(span)
 }
 
 

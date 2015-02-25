@@ -8,11 +8,19 @@
 <script>
 //web3.setProvider(new web3.providers.HttpRpcProvider("http://localhost:8080"));
 
-log( web3.eth.sendTransaction )
+try {
+
+  log( web3.eth.sendTransaction )
+
+} catch(err) {
+  log('Error:'+err.message)
+}
 
 function log(msg) {
   document.body.innerHTML += msg
 }
+
+
 
 </script>
 </body>
